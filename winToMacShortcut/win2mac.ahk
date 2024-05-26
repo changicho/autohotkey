@@ -153,3 +153,19 @@ Ctrl & Tab::AltTab
     Suspend(false)
     return
 }
+
+; for browser backward forward
+#^Left::
+{
+    Suspend(true)
+    Send("{XButton1}")
+    Suspend(false)
+    return
+}
+#^Right::
+{
+    Suspend(true)
+    Send("{XButton2}")
+    Suspend(false)
+    return
+}
